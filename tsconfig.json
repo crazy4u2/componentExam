@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./",
+    "rootDirs": ["./"],
+    "paths": {
+      "~components/*": ["./src/components/*"],
+      "~assets/*": ["./src/assets/*"],
+      "~models/*": ["./src/models/*"],
+      "~images": ["./src/assets/images/index.ts"],
+      "~utils/*": ["./src/utils/*"],
+      "~constants": ["./src/constants/index.ts"],
+      "~fonts/*": ["./src/assets/fonts/*"],
+      "~icons/*": ["./src/assets/icons/*"],
+      "~styles/*": ["./src/styles/*"],
+      "~config": ["config.ts"],
+      "~apis/*": ["./src/apis/*"],
+      "~states": ["./src/states/index.ts"],
+      "~types/*": ["./src/types/*"],
+      "~hooks/*": ["./src/hooks/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts", "src/styles", "src/pages", "public"],
+  "exclude": ["node_modules"]
+}
